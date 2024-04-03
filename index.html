@@ -1,104 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satyanarayana Gopalapurapu - Resume</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>HTML Sign in Page for Demo Project</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .sub-section {
-            margin-left: 20px;
-        }
-        .credentials {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        .links {
-            margin-top: 10px;
-            margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
     </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Satyanarayana Gopalapurapu</h1>
-        <p>Nidadavole, Andhrapradeh | satyanarayanagopalapurapu@gmail.com | +91 9701908427</p>
-        <div class="links">
-            <a href="mailto:satyanarayanagopalapurapu@gmail.com">satyanarayanagopalapurapu@gmail.com</a> |
-            <a href="tel:+919701908427">+91 9701908427</a> |
-            <a href="https://www.linkedin.com/in/satyanarayana">linkedin.com/in/satyanarayana</a> |
-            <a href="https://github.com/21A95A0418">github.com/21A95A0418</a>
-        </div>
 
-        <div class="section">
-            <h2>WORK EXPERIENCE</h2>
-            <div class="sub-section">
-                <h3>AWS Intern</h3>
-                <p>June 2022–December 2022</p>
-                <p>Technical Hub | Surampallem, Kakinada</p>
-                <ul>
-                    <li>Strategically optimized the product's infrastructure on AWS, resulting in a remarkable cost reduction of over 50% while fortifying network security.</li>
-                    <li>Deployed and managed cloud-based solutions on AWS platform; optimized infrastructure resulted in 50% reduction in server costs and improved system performance by 40%.</li>
-                    <!-- Add more bullet points as necessary -->
-                </ul>
+<body class="text-center">
+
+    <main class="form-signin">
+        <form>
+            <img class="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Account Login</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Your Email">
+                <label for="floatingInput">Email address</label>
             </div>
-            <!-- Add more work experience sections as necessary -->
-        </div>
-
-        <div class="section">
-            <h2>PROJECTS</h2>
-            <div class="sub-section">
-                <h3>Continuous Deployment In Cloud and Jenkins</h3>
-                <p>View in <a href="https://github.com/example">GitHub</a></p>
-                <ul>
-                    <li>Developed and implemented a continuous deployment workflow using Jenkins, automating the software delivery process in cloud environments.</li>
-                    <li>Integrated the deployment pipeline seamlessly with cloud platforms such as AWS, Azure, or Google Cloud, ensuring efficient and scalable deployments.</li>
-                    <!-- Add more bullet points as necessary -->
-                </ul>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
             </div>
-            <!-- Add more project sections as necessary -->
-        </div>
 
-        <div class="section">
-            <h2>CERTIFICATIONS</h2>
-            <div class="credentials">
-                <p>AWS Cloud Practitioner - <a href="#">View credentials</a></p>
-                <p>Azure Administrator Associate - <a href="#">View credentials</a></p>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
             </div>
-        </div>
-
-        <div class="section">
-            <h2>EDUCATION</h2>
-            <p>Bachelor of Technology December 2021–April 2024<br>Aditya Engineering College (India)</p>
-            <p>Diploma July 2018 - November 2021<br>Sasi Institute of Technology and Engineering (India)</p>
-        </div>
-
-        <div class="section">
-            <h2>SKILLS</h2>
-            <p>DevOps | Docker | Kubernetes | CI/CD | GitOps | Cloud | AWS | Azure | Jenkins | Ansible | Automation | Terraform | Python | Linux | Monitoring | Project Management | Communication | Leadership | Time Management | Adaptability | Problem Solving | Teamwork | Creativity | Manual Testing | SQL | TASM - MASM</p>
-        </div>
-    </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        </form>
+    </main>
 </body>
+
 </html>
